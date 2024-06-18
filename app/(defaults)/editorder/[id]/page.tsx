@@ -6,7 +6,7 @@ const getOrderById = async (id:any) => {
 
 
     try {
-        const url = "http://localhost:3002/api/order/" + id;
+        const url = `/api/order/${id}`;
         const res = await fetch(url, {
             cache: "no-store",
         });

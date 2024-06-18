@@ -366,7 +366,7 @@ const Basic = () => {
     event.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:3000/api/customer", {
+      const res = await fetch("/api/customer", {
         method: "POST",
         headers: {
           "Content-type": "application/json"

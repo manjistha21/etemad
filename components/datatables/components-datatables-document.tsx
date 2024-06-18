@@ -570,7 +570,8 @@ const ComponentsDatatablesDoucument = () => {
     } else {
       try {
        
-        const url = "http://localhost:3000/api/document/" + editid;
+        const url = `/api/document/${editid}`;
+
 
         const res = await fetch(url, {
           method: "PUT",
